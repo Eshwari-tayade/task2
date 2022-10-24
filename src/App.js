@@ -17,7 +17,7 @@ class App extends Component {
   }
     
   updateState(){
-      const link="https://reqres.in/api/users?page=2";
+      const link="https://reqres.in/api/users?page=1";
       fetch(link)
       .then(response => response.json())
       .then((users) => {
@@ -41,7 +41,7 @@ class App extends Component {
             <h2>Let's Grow More Users</h2>
             </div>
             <div className="column2">
-            <button onClick={this.updateState}>Click</button>
+            <button onClick={this.updateState}>Get Users</button>
             </div>
             </div>
           </div>
